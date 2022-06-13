@@ -1,19 +1,96 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Product landing page</title>
+<!Doctype html>
+<html>
+  <head>
     <link rel="stylesheet" href="styles.css">
-    <link 
-        rel="stylesheet" 
-        href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
-        crossorigin="anonymous"
-    >
-</head>
-<body>
-    
-</body>
+  </head>
+  <body>
+    <header id="header">
+      <img 
+        id="header-img" 
+        src="https://cdn.freecodecamp.org/testable-projects-fcc/images/product-landing-page-logo.png"
+        alt="original trambone logo">
+      <nav id="nav-bar">
+        <ul>
+          <li><a class="nav-link" href="#features">Features</a></li>
+          <li><a class="nav-link" href="#how-it-works">How it works</a></li>
+          <li><a class="nav-link" href="#pricing">Pricing</a></li> 
+        </ul>
+      </nav>
+    </header>
+    <div class="container">
+        <section id="hero">
+            <h2>Handicrafted, home made masterpiece</h2>
+            <form action="https://www.freecodecamp.com/email-submit" id="form">
+                <input 
+                    type="email"
+                    name="email"
+                    id="email"
+                    placeholder="enter your email id"
+                    required>
+                <input type="submit" class="btn" id="submit" value="Get Started">
+            </form>
+        </section>
+    </div>
+
+    <div class="container">
+        <section id="features">
+            <h2>Premium material</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+            Minima dolor inventore rerum temporibus non earum, laborum 
+            accusamus dignissimos ut cupiditate nobis, similique eveniet, 
+            numquam deleniti qui totam! Voluptate, eos minus.</p>
+        </section>
+        <section id="how-it-works">
+            <h2>How it works</h2>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                Repellat in, ipsa nihil deserunt accusamus quidem laudantium, 
+                ex minus voluptatum reiciendis, nam eius? Fugit, minus. Totam 
+                repudiandae quas similique ducimus tempora?
+            </p>
+            <iframe
+            id="video"
+            height="315"
+            src="https://www.youtube-nocookie.com/embed/y8Yv4pnO7qc?rel=0&amp;controls=0&amp;showinfo=0"
+            frameborder="0"
+            allowfullscreen
+          ></iframe>
+        </section>
+        <section id="pricing">
+            <div class="product" id="tenor">
+                <div class="level">Tenor Trombone</div>
+                <h2>$600</h2>
+                <ol>
+                  <li>Lorem ipsum.</li>
+                  <li>Lorem ipsum.</li>
+                  <li>Lorem ipsum dolor.</li>
+                  <li>Lorem ipsum.</li>
+                </ol>
+                <button class="btn">Select</button>
+              </div>
+              <div class="product" id="bass">
+                <div class="level">Bass Trombone</div>
+                <h2>$900</h2>
+                <ol>
+                  <li>Lorem ipsum.</li>
+                  <li>Lorem ipsum.</li>
+                  <li>Lorem ipsum dolor.</li>
+                  <li>Lorem ipsum.</li>
+                </ol>
+                <button class="btn">Select</button>
+              </div>
+              <div class="product" id="valve">
+                <div class="level">Valve Trombone</div>
+                <h2>$1200</h2>
+                <ol>
+                  <li>Plays similar to a Trumpet</li>
+                  <li>Great for Jazz Bands</li>
+                  <li>Lorem ipsum dolor.</li>
+                  <li>Lorem ipsum.</li>
+                </ol>
+                <button class="btn">Select</button>
+              </div>
+        </section>
+    </div>
+  <body>
 </html>
